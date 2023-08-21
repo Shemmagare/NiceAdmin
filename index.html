@@ -257,27 +257,19 @@
 
             <!-- Sales Card -->
             <div class="col-xxl-4 col-md-6">
-              <div class="card info-card sales-card">
+              <div class="card info-card revenue-card">
 
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  
-                </div>
 
-                <div class="card-body-1">
-                  <h5 class="card-title">SCORES <span>| Alber Jacobs</span></h5>
+                <div class="card-body">
+                  <h5 class="card-title">AVERAGE SCORES <span>| Alber Jacobs</span></h5>
+                  <div class="prbr-cl" num="90%" style="--prcnt:90; --clr:#005a00; --bg:#a3c0a6;">
+                    <svg viewBox="0 0 100 100">
+                     <circle cx="50" cy="50" r="45"class="prbr-cl-bg"/>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-achieve"></i>
-                    </div>
-                    
-                    <div class="ps-3">
-                      <h6>95%</h6>
-                      
+                      <circle cx="50" cy="50" r="45"class="prbr-cl-fill"/>
+                                        </svg>
+                           </div>
 
-                    </div>
-                  </div>
                 </div>
 
               </div>
@@ -287,38 +279,63 @@
             <div class="col-xxl-4 col-md-6">
               <div class="card info-card revenue-card">
 
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
                 <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                  <h5 class="card-title">INDIVIDUAL <span>| Judge Score</span></h5>
+                  <div class="score-box">
+                    <span class="Title">Judge Evans</span>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-currency-dollar"></i>
+                    <div class="score-bar">
+                      <span class="score-per"style="width: 80%;">
+                        <span class="toolbar" >80%</span>
+                      </span>
                     </div>
-                    <div class="ps-3">
-                      <h6>$3,264</h6>
-                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                  </div><br>
 
+                  <div class="score-box">
+                    <span class="Title">Judge Lucy</span>
+
+                    <div class="score-bar">
+                      <span class="score-per" style="width: 90%;">
+                        <span class="toolbar">90%</span>
+                      </span>
+                    </div>
+                  </div><br>
+
+                  <div class="score-box" >
+                    <span class="Title">Judge Ouma </span>
+
+                    <div class="score-bar">
+                      <span class="score-per" style="width: 75%;">
+                        <span class="toolbar">75%</span>
+                      </span>
+                    </div>
+                  </div><br>
+                  <div class="score-box">
+                    <span class="Title">Judge Claire</span>
+
+                    <div class="score-bar">
+                      <span class="score-per" style="width: 95%;">
+                        <span class="toolbar">95%</span>
+                      </span>
+                    </div>
+                  </div><br>
+                  <div class="score-box">
+                    <span class="Title">Judge Amos</span>
+
+                    <div class="score-bar">
+                      <span class="score-per" style="width: 60%;">
+                        <span class="toolbar">60%</span>
+                      </span>
                     </div>
                   </div>
+                  
+                  
                 </div>
 
               </div>
             </div><!-- End Revenue Card -->
 
-            <!-- Customers Card -->
+            <!-- Customers Card --
             <div class="col-xxl-4 col-xl-12">
 
               <div class="card info-card customers-card">
@@ -355,7 +372,7 @@
 
             </div><!-- End Customers Card -->
 
-            <!-- Reports -->
+            <!-- Reports --
             <div class="col-12">
               <div class="card">
 
@@ -375,7 +392,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Reports <span>/Today</span></h5>
 
-                  <!-- Line Chart -->
+                  <!-- Line Chart --
                   <div id="reportsChart"></div>
 
                   <script>
@@ -430,88 +447,14 @@
                       }).render();
                     });
                   </script>
-                  <!-- End Line Chart -->
+                  <!-- End Line Chart --
 
                 </div>
 
               </div>
             </div><!-- End Reports -->
 
-            <!-- Recent Sales -->
-            <div class="col-12">
-              <div class="card recent-sales overflow-auto">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
-
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2147</a></th>
-                        <td>Bridie Kessler</td>
-                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2049</a></th>
-                        <td>Ashleigh Langosh</td>
-                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Recent Sales -->
-
-            <!-- Top Selling -->
+            <!-- Top Selling --
             <div class="col-12">
               <div class="card top-selling overflow-auto">
 
@@ -595,7 +538,7 @@
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <!-- <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <li class="dropdown-header text-start">
                   <h6>Filter</h6>
                 </li>
@@ -603,11 +546,11 @@
                 <li><a class="dropdown-item" href="#">Today</a></li>
                 <li><a class="dropdown-item" href="#">This Month</a></li>
                 <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
+              </ul> -->
             </div>
 
             <div class="card-body">
-              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+              <h5 class="card-title">Judges Comments <span>| </span></h5>
 
               <div class="activity">
 
@@ -647,24 +590,24 @@
                   <div class="activite-label">2 days</div>
                   <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
                   <div class="activity-content">
-                    Est sit eum reiciendis exercitationem
+                    Est sit eum reiciendis 
                   </div>
                 </div><!-- End activity item-->
 
-                <div class="activity-item d-flex">
+                <!-- <div class="activity-item d-flex">
                   <div class="activite-label">4 weeks</div>
                   <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                   <div class="activity-content">
                     Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
                   </div>
-                </div><!-- End activity item-->
+                </div>End activity item -->
 
               </div>
 
             </div>
           </div><!-- End Recent Activity -->
 
-          <!-- Budget Report -->
+          <!-- Budget Report --
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -738,7 +681,7 @@
             </div>
           </div><!-- End Budget Report -->
 
-          <!-- Website Traffic -->
+          <!-- Website Traffic --
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -816,7 +759,7 @@
             </div>
           </div><!-- End Website Traffic -->
 
-          <!-- News & Updates Traffic -->
+          <!-- News & Updates Traffic --
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -865,13 +808,88 @@
                   <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- End sidebar recent posts--
 
             </div>
           </div><!-- End News & Updates -->
 
         </div><!-- End Right side columns -->
 
+         <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Innovation<span>| Table</span></h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Innovation</th>
+                        <th scope="col">Average Score</th>
+                        <th scope="col">Sector</th>
+                        <th scope="col">County</th>
+                        <th scope="col">Ranking</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#">#2457</a></th>
+                        <td>Brandon Jacob</td>
+                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
+                        <td>$64</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2147</a></th>
+                        <td>Bridie Kessler</td>
+                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
+                        <td>$47</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2049</a></th>
+                        <td>Ashleigh Langosh</td>
+                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
+                        <td>$147</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2644</a></th>
+                        <td>Angus Grady</td>
+                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
+                        <td>$67</td>
+                        <td><span class="badge bg-danger">Rejected</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2644</a></th>
+                        <td>Raheem Lehner</td>
+                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
+                        <td>$165</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+          
       </div>
     </section>
 
